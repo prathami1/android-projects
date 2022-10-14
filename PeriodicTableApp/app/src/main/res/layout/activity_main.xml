@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#F586FF29"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/id_list"
+        android:layout_width="341dp"
+        android:layout_height="558dp"
+        android:background="#F586FF29"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.497" />
+
+    <TextView
+        android:id="@+id/id_category"
+        android:layout_width="170dp"
+        android:layout_height="38dp"
+        android:text="Category:"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_list"
+        app:layout_constraintVertical_bias="0.244" />
+
+    <Button
+        android:id="@+id/id_shuffle"
+        android:layout_width="109dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:text=" Load"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.639"
+        app:layout_constraintStart_toEndOf="@+id/id_category"
+        app:layout_constraintTop_toBottomOf="@+id/id_list"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/id_phase"
+        android:layout_width="131dp"
+        android:layout_height="25dp"
+        android:text="Phase:"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/id_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.803" />
+</androidx.constraintlayout.widget.ConstraintLayout>

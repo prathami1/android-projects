@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#F586FF29"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/id_list"
+        android:layout_width="347dp"
+        android:layout_height="315dp"
+        android:background="#F586FF29"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.489" />
+
+    <TextView
+        android:id="@+id/id_layout_name"
+        android:layout_width="172dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="36dp"
+        android:text="Element Name"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/id_list"
+        app:layout_constraintStart_toEndOf="@+id/id_list"
+        app:layout_constraintTop_toTopOf="@+id/id_list"
+        app:layout_constraintVertical_bias="0.173" />
+
+    <TextView
+        android:id="@+id/id_layout_symbol"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="36dp"
+        android:text="S"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/id_list"
+        app:layout_constraintStart_toEndOf="@+id/id_list"
+        app:layout_constraintTop_toTopOf="@+id/id_list"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/id_layout_category"
+        android:layout_width="164dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="36dp"
+        android:text="Category:"
+        app:layout_constraintBottom_toBottomOf="@+id/id_list"
+        app:layout_constraintStart_toEndOf="@+id/id_list"
+        app:layout_constraintTop_toBottomOf="@+id/id_layout_name"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <TextView
+        android:id="@+id/id_layout_discoveredBy"
+        android:layout_width="220dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="36dp"
+        android:text="Discovered By:"
+        app:layout_constraintBottom_toBottomOf="@+id/id_list"
+        app:layout_constraintStart_toEndOf="@+id/id_list"
+        app:layout_constraintTop_toBottomOf="@+id/id_layout_category"
+        app:layout_constraintVertical_bias="0.048" />
+
+    <TextView
+        android:id="@+id/id_layout_namedBy"
+        android:layout_width="205dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="36dp"
+        android:text="Named By:"
+        app:layout_constraintBottom_toBottomOf="@+id/id_list"
+        app:layout_constraintStart_toEndOf="@+id/id_list"
+        app:layout_constraintTop_toBottomOf="@+id/id_layout_discoveredBy"
+        app:layout_constraintVertical_bias="0.069" />
+
+    <TextView
+        android:id="@+id/id_layout_summary"
+        android:layout_width="286dp"
+        android:layout_height="138dp"
+        android:layout_marginStart="36dp"
+        android:text="Summary"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/id_list"
+        app:layout_constraintStart_toEndOf="@+id/id_list"
+        app:layout_constraintTop_toBottomOf="@+id/id_layout_namedBy"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/id_land_shuffle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="shuffle"
+        app:layout_constraintBottom_toTopOf="@+id/id_layout_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.747"
+        app:layout_constraintStart_toEndOf="@+id/id_layout_symbol"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.959" />
+
+    <TextView
+        android:id="@+id/id_layout_phase"
+        android:layout_width="80dp"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:text="(Phase)"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/id_layout_name"
+        app:layout_constraintEnd_toStartOf="@+id/id_land_shuffle"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/id_layout_symbol"
+        app:layout_constraintTop_toTopOf="@+id/id_list"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
